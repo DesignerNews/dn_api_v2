@@ -51,5 +51,5 @@ curl -X POST \
   -H "Authorization: Bearer <your_auth_token>" \
   -H "Content-Type: application/vnd.api+json" \
   -d '{ "upvotes": { "links": { "story": "101", "user": "1" } } }' \
-  https://api-news.layervault.com/api/v2/upvotes
+  https://www.designernews.co/api/v2/upvotes
 ```

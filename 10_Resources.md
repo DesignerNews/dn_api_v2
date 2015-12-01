@@ -11,7 +11,7 @@ GET /api/v2/{plural_resource_name}/:id
 With this format, you can retrieve a single resource. Let's get the first user model:
 
 ```shell
-$ curl https://api-news.layervault.com/api/v2/users/1
+$ curl https://www.designernews.co/api/v2/users/1
 ```
 
 You will then get the following response:
@@ -20,7 +20,7 @@ You will then get the following response:
 {
   "users": [{
     "id": "1",
-    "href": "https://news.layervault.com/api/v2/users/1",
+    "href": "https://api.designernews.co/api/v2/users/1",
     "links": {
       "comments": ["2", "7", "12"],
       "stories": ["1", "20"],
@@ -47,7 +47,7 @@ GET /api/v2/{plural_resource_name}/:id1,:id2,:id3
 Let’s see how that works with the users resource.
 
 ```shell
-$ curl https://api-news.layervault.com/api/v2/users/1,2,3
+$ curl https://www.designernews.co/api/v2/users/1,2,3
 ```
 
 That results in a response with the users identified by the IDs 1, 2, and 3.
@@ -85,7 +85,7 @@ $ curl -X POST \
   -H 'Authorization: Bearer <your access token>' \
   -H 'Content-Type: application/vnd.api+json' \
   -d '{ "stories": { "title": "Bring in the Cats", "url": "http://bringinthecats.com/", "links": { "user": "1" } } }' \
-  https://api-news.layervault.com/api/v2/stories
+  https://www.designernews.co/api/v2/stories
 ```
 
 This request will create a story resource with the title "Bring in the Cats" with the URL "http://bringinthecats.com/" with the user with the ID of "1" as its author. If things go over
@@ -108,7 +108,7 @@ $ curl -X PUT \
   -H 'Authorization: Bearer <your access token>' \
   -H 'Content-Type: application/vnd.api+json' \
   -d '{ "stories": { "title": "Bring in the cats.biz" }' \
-  https://api-news.layervault.com/api/v2/stories/1
+  https://www.designernews.co/api/v2/stories/1
 ```
 
 This request updates the `title` attribute of the story with the ID of `1` to be "Bring in the cats.biz".
@@ -126,7 +126,7 @@ DELETE /api/v2/{plural_resource_name}/:id
 Let’s see how that would look deleting the story with the ID of `1`.
 
 ```shell
-$ curl -X DELETE https://api-news.layervault.com/api/v2/stories/1
+$ curl -X DELETE https://www.designernews.co/api/v2/stories/1
 ```
 
 If things go well, you will receive an `HTTP 204 No Content` response. Please bear in mind, you

@@ -7,7 +7,7 @@ an OAuth token:
 
 
 ```shell
-curl -i https://api-news.layervault.com/oauth/token \
+curl -i https://www.designernews.co/oauth/token \
   -F grant_type="password" \
   -F username="<your Designer News username>" \
   -F password="<your Designer News password>"

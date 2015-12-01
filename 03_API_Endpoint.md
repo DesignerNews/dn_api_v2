@@ -1,3 +1,3 @@
 ### API Endpoint
 
-https://api-news.layervault.com/api/v2
+https://www.designernews.co/api/v2/

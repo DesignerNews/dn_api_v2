@@ -1,6 +1,6 @@
 ## Jobs
 
-Jobs resources are the jobs currently listed on the [Designer News jobs board](https://news.layervault.com/jobs).
+Jobs resources are the jobs currently listed on the [Designer News jobs board](https://designernews.co/jobs).
 
 ### Available actions
 
